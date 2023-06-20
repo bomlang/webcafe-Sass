@@ -16,3 +16,42 @@
     border: 1px solid currentColor;
   }
 }
+
+//햄버거 버튼
+.button--burger {
+  @include mobile {
+    background-color: tomato;
+    width: rem(36px);
+    height: rem(36px);
+    border: 0;
+    padding: 0;
+    @include pos;
+
+    &BarTop,
+    &BarMiddle,
+    &BarBottom {
+      @include pos;
+      background: $white;
+      width: 100%;
+      height: 20%;
+      border-radius: rem(10px);
+      left: 0;
+    }
+
+    &BarTop {
+      @include posLeftTop;
+    }
+
+    &BarMiddle {
+      @include posCenterY;
+    }
+
+    &BarBottom {
+      @include posBottomY;
+    }
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
