@@ -2,11 +2,17 @@
 
 // 루트 요소 기본 단위 --------------------------------------------------------------- /
 $rootUnit: 16px !default;
+<<<<<<< HEAD
 // $rootUnit: 16px;
 
 // 단위 제거 함수 ------------------------------------------------------------------ /
 @function removeUnit($value) {
   // @return ($value / ($value * 0 + 1));
+=======
+
+// 단위 제거 함수 ------------------------------------------------------------------ /
+@function removeUnit($value) {
+>>>>>>> 52196c2e83881c20fdbc004408768f07765872cc
   @return math.div($value, $value * 0 + 1);
 }
 
@@ -16,6 +22,7 @@ $rootUnit: 16px !default;
   $removeBase: removeUnit($base);
   @return math.div($removeValue, $removeBase) * 1rem;
 }
+<<<<<<< HEAD
 
 // px을 em 단위로 변경하는 함수 ------------------------------------------------------- /
 @function em($value, $base: $rootUnit) {
@@ -26,3 +33,5 @@ $rootUnit: 16px !default;
 // @debug 10px * 1px;
 // @debug math.div(16px, 1);
 // @debug math.div(16px, 1px);
+=======
+>>>>>>> 52196c2e83881c20fdbc004408768f07765872cc

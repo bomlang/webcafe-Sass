@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+// 미디어쿼리 믹스인
+
+>>>>>>> 52196c2e83881c20fdbc004408768f07765872cc
 $break: 768px;
 
 @mixin mobile {
@@ -5,6 +10,10 @@ $break: 768px;
     @content;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52196c2e83881c20fdbc004408768f07765872cc
 @mixin desktop {
   @media (min-width: #{$break}) {
     @content;
