@@ -1,1 +1,12 @@
-// mixin.scss
+@use "./../utils/unit" as *;
+
+@mixin posCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin paddingX($spacing) {
+  padding-left: rem($spacing);
+  padding-right: rem($spacing);
+}
