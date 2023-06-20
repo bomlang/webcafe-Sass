@@ -1,5 +1,5 @@
 @use "./../utils" as *;
-@use "./../components/" as *;
+@use "./../components" as *;
 
 .appHeader {
   background: yellow;
@@ -28,7 +28,7 @@
   }
 
   @include desktop {
-    position: absolute;
+    @include posCenter;
   }
 }
 
@@ -44,8 +44,9 @@
 // 검색 폼
 .searchForm {
   &__group {
-    text-align: right;
+    /* background: blue; */
     @include flexbox($justify: flex-end);
+    gap: rem(16px);
 
     @include mobile {
       .formInput {
