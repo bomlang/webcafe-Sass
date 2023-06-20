@@ -397,17 +397,6 @@ legend {
 
 @media (max-width: 767px) {
   .button--burger {
-<<<<<<< HEAD
-    background-color: tomato;
-    width: 2.25rem;
-    height: 2.25rem;
-    border: 0;
-    padding: 0;
-    position: absolute;
-  }
-  .button--burgerBarTop, .button--burgerBarMiddle, .button--burgerBarBottom {
-    position: absolute;
-=======
     width: 2.25rem;
     height: 2.25rem;
     background: blue;
@@ -418,7 +407,6 @@ legend {
     right: 1.25rem;
   }
   .button--burgerBarTop, .button--burgerBarMiddle, .button--burgerBarBottom {
->>>>>>> 0982202b6a865a0f5db807b767a5149b9830e577
     background: #ffffff;
     width: 100%;
     height: 20%;
@@ -427,22 +415,6 @@ legend {
   }
   .button--burgerBarTop {
     position: absolute;
-<<<<<<< HEAD
-    left: 0;
-    top: 0;
-  }
-  .button--burgerBarMiddle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%, -50%);
-  }
-  .button--burgerBarBottom {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%, -50%);
-=======
     top: 0;
     left: 0;
   }
@@ -455,7 +427,6 @@ legend {
     position: absolute;
     top: 100%;
     transform: translateY(-100%);
->>>>>>> 0982202b6a865a0f5db807b767a5149b9830e577
   }
 }
 @media (min-width: 768px) {
